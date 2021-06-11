@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+
+    --cyan: 179, 62%, 43%;
+    --bright-yellow: 71, 73%, 54%;
+    --light-gray: 204, 43%, 93%;
+    --grayish-blue: 218, 22%, 67%;
+}
+html, body {
+    background-color: hsl(var(--light-gray));
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin: 0;
+    color: hsl(var(--cyan));
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1.2rem;
+}
+p, li {
+    line-height: 1.5rem;
+}
+
+
+main {
+    height: max(100vh, 100%);
+    min-height: 100vh;
+    padding: 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    flex: 1 1 320px;
+    max-width: min(60vw, 720px);
+    min-width: 320px;
+    display: grid;
+    /* width: max(50vw, 320px); */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 1px 16px 1px hsla(0, 0%, 79%, 0.5), -1px -1px 16px 1px hsla(0, 0%, 79%, 0.5);
+
+    grid-template-rows: auto auto;
+}
+
+.intro-card {
+    background-color: white;
+    color: hsl(var(--grayish-blue));
+    padding: 24px 32px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.intro-card h2 {
+    color: hsl(var(--bright-yellow));
+}
+.cta-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: auto;
+}
+.cta-card > * {
+    padding: 24px 32px;
+    flex-grow: 1;
+}
+.cta-card > *:first-child {
+    background-color: hsl(var(--cyan));
+    color: white;
+}
+    .dollar {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .dollar, .dollar + * {
+        line-height: 2rem;
+    }
+    .dollar + * { 
+        vertical-align: top;
+        padding-left: 8px;
+        color: hsl(var(--light-gray));
+    }
+    button {
+        border: 0;
+        border-radius: 4px;
+        background-color: hsl(var(--bright-yellow));
+        width: 100%;
+        height: 50px;
+        color: white;
+        font-family: inherit;
+        font-weight: 700;
+        margin: 8px 0;
+        box-shadow: 0px 8px 8px -2px hsla(0, 0%, 46%, 0.4);
+        cursor: pointer;
+    }
+    button:hover {
+        transform: scale(102%);
+    }
+.cta-card > *:nth-child(2) {
+    background-color: hsl(var(--cyan), 0.8);
+    color: hsl(var(--light-gray));
+}
+    .reasons {
+        list-style: none;
+        padding-left: 0;
+    }
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 764px) {
+    .cta-card {
+        flex-wrap: wrap;
+    }
+}
