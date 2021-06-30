@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/solutions/single-price-grid-component-using-css-grid-flexbox-and-html5-DM6t1uqaC)
-- [Live Site URL](https://single-price-grid-component-rngueco.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/single-price-grid-component-using-css-grid-flexbox-and-html5-DM6t1uqaC](https://www.frontendmentor.io/solutions/single-price-grid-component-using-css-grid-flexbox-and-html5-DM6t1uqaC)
+- Live Site URL: [https://rngueco.github.io/single-price-grid-component/](https://rngueco.github.io/single-price-grid-component/)
 
 ## My process
 
